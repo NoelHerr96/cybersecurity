@@ -42,7 +42,7 @@ def generate_OTP():
     OTP_gen = str(random.randint(1000, 9999))
     session['generated_OTP'] = OTP_gen
     session['OTP_verified'] = False  # Reset token verification status
-    return f"Your generated 4-digit verification code is: {OTP_gen}"
+    return f"{OTP_gen}"
 
 
 # Route to verify the OTP
