@@ -1,2 +1,12 @@
 name: MFA Continouos Integration
 
+on:
+    pull_request:
+        branches: [ master ]
+
+
+jobs:
+    test_pull_requests:
+        run-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
